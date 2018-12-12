@@ -1,6 +1,6 @@
 {
   "name": "bulma-toast",
-  "version": "1.4.0",
+  "version": "1.4.0-es5",
   "description": "Bulma's pure JavaScript extension to display toasts",
   "main": "dist/bulma-toast.cjs.js",
   "module": "dist/bulma-toast.esm.js",
@@ -21,14 +21,23 @@
     "bulma.io"
   ],
   "author": "@rfoel <rafaelfr@outlook.com>",
+  "contributors": [
+    {
+      "email": "gabriel@keeex.net",
+      "name": "Gabriel Paul \"Cley Faye\" Risterucci"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rfoel/bulma-toast/issues"
   },
   "homepage": "https://rafaelfran.co/bulma-toast",
   "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "jest": "^23.5.0",
     "rollup": "^0.63.5",
+    "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-babel-minify": "^5.0.0"
   },
   "files": [
