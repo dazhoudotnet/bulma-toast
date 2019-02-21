@@ -11,14 +11,14 @@ export default [
       format: "umd"
     },
     plugins: [
-      babel({
-        exclude: "node_modules/**",
-      }),
       minify({
         banner: `/*!\n * ${pkg.name} ${pkg.version} \n * (c) 2018-present ${
           pkg.author
           } \n * Released under the ${pkg.license} License.\n */`,
         bannerNewLine: true
+      }),
+      babel({
+        exclude: "node_modules/**",
       })
     ]
   },
@@ -34,6 +34,9 @@ export default [
           pkg.author
           } \n * Released under the ${pkg.license} License.\n */`,
         bannerNewLine: true
+      }),
+      babel({
+        exclude: "node_modules/**",
       })
     ]
   }
