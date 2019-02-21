@@ -2,7 +2,7 @@
 
 Bulma's pure JavaScript extension to display toasts. Basically a Bulma's [notification](https://bulma.io/documentation/elements/notification) implemented as a toast plugin.
 
-[Demo](https://rafaelfran.co/bulma-toast/)
+[Demo](https://rfoel.com/bulma-toast/)
 
 ![Bulma Toast](https://raw.githubusercontent.com/rfoel/bulma-toast/master/bulma-toast.png)
 
@@ -48,11 +48,18 @@ bulmaToast.toast({ message: "Hello There" });
 bulmaToast.toast({ message: "General Kenobi", type: "is-danger" });
 ```
 
+## Change document context
+
+```js
+bulmaToast.setDoc(window.document);
+```
+This can be changed before each toast call and can be set to eny element.
+
 ## ES Modules
 
 ```js
 // Import the toast function
-import { toast } from "bulma-toast";
+import * as bulmaToast from "bulma-toast";
 // Or use
 // import { toast as superToast } from 'bulma-toast'
 // to rename your import

@@ -17,7 +17,7 @@ export default [
       minify({
         banner: `/*!\n * ${pkg.name} ${pkg.version} \n * (c) 2018-present ${
           pkg.author
-        } \n * Released under the ${pkg.license} License.\n */`,
+          } \n * Released under the ${pkg.license} License.\n */`,
         bannerNewLine: true
       })
     ]
@@ -32,7 +32,7 @@ export default [
       minify({
         banner: `/*!\n * ${pkg.name} ${pkg.version} \n * (c) 2018-present ${
           pkg.author
-        } \n * Released under the ${pkg.license} License.\n */`,
+          } \n * Released under the ${pkg.license} License.\n */`,
         bannerNewLine: true
       })
     ]
