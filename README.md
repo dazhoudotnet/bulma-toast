@@ -1,13 +1,15 @@
 # bulma-toast
 
-[![npm version](https://badge.fury.io/js/bulma-toast.svg)](https://badge.fury.io/js/bulma-toast)
-[![Build Status](https://travis-ci.org/rfoel/bulma-toast.svg?branch=master)](https://travis-ci.org/rfoel/bulma-toast)
-
 Bulma's pure JavaScript extension to display toasts. Basically a Bulma's [notification](https://bulma.io/documentation/elements/notification) implemented as a toast plugin.
 
 [Demo](https://rfoel.com/bulma-toast/)
 
 ![Bulma Toast](https://raw.githubusercontent.com/rfoel/bulma-toast/master/bulma-toast.png)
+
+## Note about this repository
+
+This should be a 1:1 copy of the original repository but built to support ES5.
+To use it, use `npm install `https://github.com/KeeeX/bulma-toast.git`.
 
 ## Options
 
@@ -25,10 +27,10 @@ The plugin comes with 5 options to be used as a JavaScript object:
 
 ## Install
 
-#### [npm](https://www.npmjs.com/package/bulma-toast)
+This repository is not on the central npm site to not conflict with the normal, non babelified one.
 
 ```
-  npm install --save bulma-toast
+  npm install --save https://github.com/KeeeX/bulma-toast.git
 ```
 
 ## Quick Start

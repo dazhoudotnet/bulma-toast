@@ -1,4 +1,5 @@
 import minify from "rollup-plugin-babel-minify";
+import babel from "rollup-plugin-babel";
 import pkg from "./package.json";
 
 export default [
@@ -15,6 +16,9 @@ export default [
           pkg.author
           } \n * Released under the ${pkg.license} License.\n */`,
         bannerNewLine: true
+      }),
+      babel({
+        exclude: "node_modules/**",
       })
     ]
   },
@@ -30,6 +34,9 @@ export default [
           pkg.author
           } \n * Released under the ${pkg.license} License.\n */`,
         bannerNewLine: true
+      }),
+      babel({
+        exclude: "node_modules/**",
       })
     ]
   }
